@@ -213,6 +213,9 @@ def main():
                 generate_md5_file_for(filename, filename + '.md5')
         print("===============================================================================")
 
+    elif operation == 'generatemasterfile':
+        # Generates a master file for all files
+
 
 if __name__ == "__main__":
     main()
