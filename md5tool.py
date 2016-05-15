@@ -48,10 +48,6 @@ def generate_md5_hash(filename, block_size=2 ** 20, progress_blocks=128):
                 sys.stdout.flush()
             blocks += 1
     return md5.hexdigest()
-    
-def generate_md5_hash_into_one_master_file():
-    """This function generates an md5 hash for a given file and appends this into one master file."""
-    
 
 def check_against_md5_file(filename, md5_filename):
     """This function checks a filename against its md5 filename."""
@@ -97,6 +93,12 @@ def generate_md5_file_for(filename, md5_filename):
 
     sys.stdout.write("\rDONE        {0}\n".format(filename))
     sys.stdout.flush()
+
+#edit anchor
+    
+def generate_md5_master_into_one_master_file(filename, md5_filename):
+    """This function appends an md5 hash for a given file into one master file."""
+    
 
 
 def get_file_info_dictionaries(dirs, options):
